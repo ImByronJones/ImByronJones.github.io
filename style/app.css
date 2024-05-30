@@ -1,0 +1,262 @@
+@font-face {
+  font-family: Reddit;
+  src: url(/fonts/RedditMono-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Reddit;
+}
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #1D1D1D;
+  background-size: cover;
+  padding: 10px 10%;
+  overflow: hidden;
+  position: relative; /* Changed to relative */
+  z-index: 1; /* Ensure hero is above other elements */
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  z-index: 10; /* Ensure nav is above other elements */
+  position: relative; /* Ensure it is positioned relative to its normal position */
+}
+
+nav .labl {
+  color: #fff;
+  font-size: 250%;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: auto; /* Pushes the list to the right */
+}
+
+nav .labl:hover {
+  color: #000;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+  padding: 10px 40px;
+}
+
+nav ul li a:hover {
+  background-color: #2B2B2B;
+  border-radius: 30px;
+}
+
+.content {
+  margin-top: 10%;
+  max-width: 600px;
+  z-index: 5; /* Ensure content is above hero background */
+  position: relative; /* Ensure it is positioned relative to its normal position */
+}
+
+.content h1 {
+  font-size: 70px;
+  color: #DEDEDE;
+}
+
+.content p {
+  margin: 10px 0 30px;
+  color: gray;
+  animation-delay: 0.5s;
+}
+
+.content .btn {
+  padding: 15px 80px;
+  font-size: 16px;
+  animation-delay: 1s;
+}
+
+.btn:hover {
+  border-top-right-radius: 30px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.feature-img {
+  width: 700px;
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+  margin: 0px 0px;
+  z-index: 2; /* Ensure image is above hero background but below nav */
+}
+
+.feature-img .anim {
+  animation-delay: 1.5s;
+}
+
+.anim {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: moveup 0.5s linear forwards;
+}
+
+@keyframes moveup {
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/* 
+  ----------------------- PROJECT SECTION -----------------------
+*/
+
+.topbar:hover {
+  color: white;
+}
+
+.project-content {
+  color: #fff;
+  font-size: 25px;
+}
+.project-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.project-content li {
+  margin: 100px 0px;
+}
+
+.list-item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.text-content {
+  margin-right: 350px;
+}
+
+.text-content span {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.text-content.proj-3-text {
+  margin-right: 120px;
+}
+
+.description {
+  margin: 0;
+  font-size: 18px;
+  color: gray;
+}
+
+video {
+  height: auto;
+}
+
+#project-title {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.vid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+
+/* 
+  ----------------------- ABOUT -----------------------
+*/
+
+#about-title {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.list-about {
+  margin: 15px;
+  text-align: center;
+
+}
+
+.list-about ul li{
+  list-style: none; 
+  margin: 100px 0px;
+}
+
+.list-about ul li h1{
+  color: #fff;
+  font-size: 25px;
+}
+
+.list-about ul li p{
+  color: gray;
+  font-size: 18px;
+}
+
+#right {
+  text-align: right;
+}
+
+.skills-logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.skills-logo img {
+  max-width: 100px;
+  height: auto;
+}
+
+/*   
+  ----------------------- ABOUT -----------------------
+*/
+
+#contact-title {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.contact-info {
+  color: white;
+  text-align: center;
+}
+
+.contact-info ul li {
+  list-style: none;
+}
+
+.contact-info a {
+  color: orange;
+}
+
+.contact-info p, a {
+  display: inline;
+}
