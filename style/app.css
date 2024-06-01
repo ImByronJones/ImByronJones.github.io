@@ -159,11 +159,16 @@ nav ul li a:hover {
   margin-right: 120px;
 }
 
+.text-content.proj-4-text {
+  margin-right: 120px;
+}
+
 .description {
   margin: 0;
   font-size: 18px;
   color: gray;
 }
+
 
 video {
   height: auto;

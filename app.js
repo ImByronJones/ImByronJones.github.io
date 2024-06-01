@@ -35,6 +35,13 @@ document.addEventListener("DOMContentLoaded", function () {
     replayVideo(video3);
   })
 
+  var replayButton4 = document.getElementById('proj-4-replay');
+  var video4 = document.getElementById('proj-4');
+
+  replayButton4.addEventListener('click', function() {
+    replayVideo(video4);
+  })
+
   var muteButton = document.getElementById('mute');
   
   muteButton.addEventListener('click', function() {
